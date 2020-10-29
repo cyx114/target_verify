@@ -45,7 +45,7 @@ end
 if __FILE__ == $0
   first_file = ARGV[0]
   last_file = ARGV[1]
-  # for debug convenience
+  # for DEBUG convenience
   if first_file.nil? or last_file.nil?
     first_file = "<#debug path#>"
     last_file = first_file = "<#debug path#>"
