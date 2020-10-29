@@ -107,6 +107,7 @@ def compare_arr_reverse(first_file_arr, last_file_arr, class_obj, target_first, 
       puts file
     end
     puts "========Abnormal========"
+    $should_interrupt = true
   end
 end
 
@@ -129,7 +130,7 @@ if __FILE__ == $0
   project_path = ARGV[0]
   target_name_first = ARGV[1]
   target_name_last = ARGV[2]
-  # for debug convenience
+  # for DEBUG convenience
   project_path  = !project_path.nil? ? project_path : "<#debug path#>"
   target_name_first = !target_name_first.nil? ? target_name_first : "<#debug target name#>"
   target_name_last = !target_name_last.nil? ? target_name_last : "<#debug target name#>"
